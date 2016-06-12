@@ -3,25 +3,30 @@ BeeMonitor
 
 Arduino and Raspberry Pi Source Code for Bee Hive Temperature Monitoring Project http://beemonitor.org/setup
 
+# Update June 2016
 
-* Arduino Tx - read from DS18B20 temperature sensors every 60's, read battey voltage and and tramsmitt via RF. Atmega328 is put to sleep in between readings to save battery power 
+**Software has been tweaked, re-compiled and refactored, see the new repository for latest code:**
 
-* Arduino Rx - Receive data via RF, decod and print to serial - Arduino connected to web-connected Raspberry Pi via USB serial 
+## https://github.com/glynhudson/BeeMonV2
+
+***
+
+* **Arduino Tx** - read from DS18B20 temperature sensors every 60's, read battey voltage and and tramsmitt via RF. Atmega328 is put to sleep in between readings to save battery power 
+
+* **Arduino Rx** - Receive data via RF, decod and print to serial - Arduino connected to web-connected Raspberry Pi via USB serial 
 
 
-* Raspberry Pi uses emonHub serial listner to receive data via USB serial port (/dev/ttyUSB0) and post to emoncms.org for loggin and graphing 
-emonHub: http://github.com/emonhub
+* Raspberry Pi uses emonHub serial listener to receive data via USB serial port (/dev/ttyUSB0) and post to https://emoncms.org for loggin and graphing 
 
-Blog Post with instructions for using emonHub Serial Listner to post to emoncms: http://openenergymonitor.blogspot.com/2014/01/oem-gateway-serial-port-emoncms-link.html
+emonHub: http://github.com/openenergymonitor/emonhub
+
+Blog Post with instructions for using emonHub Serial Listner to post to emoncms: https://blog.openenergymonitor.org/2014/01/oem-gateway-serial-port-emoncms-link/
 
 Forum thread: http://openenergymonitor.org/emon/node/3693#comment-17847
-
-
-
-
-
 
 
 Part of the http://OpenEnergyMonitor.org project 
 
 Bee Monitoring Project: http://beemonitor.org
+
+Glyn Hudson & Clive Hudson
